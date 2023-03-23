@@ -194,7 +194,8 @@ class MainActivity : AppCompatActivity() {
         //list.first()
         //list.last()
         //list.clear()
-
+        //list.sort() Ordena ascendente
+        //list.sortDescending() Ordena descendentemente
 
 
 
