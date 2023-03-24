@@ -8,14 +8,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
       //  codigo()
-      //  main()
+      //  tipos()
       //  operaciones()
       //  rangos()
     //  control()
       //  fArray()
      //   listas()
-
-      mapas()
+     // mapas()
+        funciones()
 
     }
 
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun main(){
+    fun tipos(){
 
         /***  var : Variables Mutables ***/
         /***  val: Variables Inmutables - Constantes ***/
@@ -218,16 +218,28 @@ class MainActivity : AppCompatActivity() {
         val mapaMutable= mutableMapOf("primero" to 1, "segundo" to 2, "tercero" to 3,)
         mapaMutable["cuarto"]=4
         mapaMutable.put("quinto",5)
-        println("Mapa de nº : $mapaMutable")
+        println("Mapa mutable : $mapaMutable")
 
         println("El valor del elemento segundo es : " +mapaMutable["segundo"])  // OTRA FORMA: +mapaMutable.get("segundo")
 
+        mapaMutable.remove("primero")
+        println("Mapa mutable : $mapaMutable")
 
 
-    }
+    }//end_mapas
+
+
+    fun funciones(){
 
 
 
+}//End_funciones
+
+    /** equivalente a funcion MAIN
+     *
+     *  fun main(arg:Array<String>){}
+     *
+     * **/
 
 
 }
