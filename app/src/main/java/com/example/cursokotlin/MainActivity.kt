@@ -13,7 +13,9 @@ class MainActivity : AppCompatActivity() {
       //  rangos()
     //  control()
       //  fArray()
-        listas()
+     //   listas()
+
+      mapas()
 
     }
 
@@ -196,7 +198,29 @@ class MainActivity : AppCompatActivity() {
         //list.clear()
         //list.sort() Ordena ascendente
         //list.sortDescending() Ordena descendentemente
+    }
 
+
+    fun   mapas(){
+
+        //MAPA NO MODIFICABLE
+        val mapaDeNumeros=mapOf("cod1" to 1, "cod2" to 2, "cod3" to 3,)
+        println("Mapa de nº : $mapaDeNumeros")
+
+        val mapaDeString=mapOf(1 to "Rafa", 2 to "Sanchez", 3 to "Escobar",)
+        println("Mapa de string : $mapaDeString")
+
+        println("Claves de mapa ${mapaDeString.keys}")
+        println("Valores de mapa ${mapaDeString.values}")
+
+
+        //MAPA MODIFICABLE
+        val mapaMutable= mutableMapOf("primero" to 1, "segundo" to 2, "tercero" to 3,)
+        mapaMutable["cuarto"]=4
+        mapaMutable.put("quinto",5)
+        println("Mapa de nº : $mapaMutable")
+
+        println("El valor del elemento segundo es : " +mapaMutable["segundo"])  // OTRA FORMA: +mapaMutable.get("segundo")
 
 
 
